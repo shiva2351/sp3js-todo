@@ -8,21 +8,31 @@ body{
     margin: 0;
 }
 
+.todo-app{
+    border:2px solid darkgoldenrod;
+    width: 100vw;
+    height: 100vh;
+}
+.todo-content{
+    height: 85%;
+}
 .home-card-1{
-    border:2px solid red;
     display: flex;
     justify-content: space-between;
-    padding-left:2rem;
-    padding-right:2rem;
+    align-items: center;
+    padding:5px;
+    height: 8%;
 }
 
 .head{
-    border:2px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left:2rem;
     padding-right:2rem;
+    height: 15%;
+    background-color: lightblue;
+    border:2px solid black;
 }
 .todo-text{
     font-size:40px;
@@ -34,4 +44,25 @@ body{
         font-size:20px;
         font-weight:900;
     }
+}
+
+.list{
+    border:2px solid green;
+    padding:0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 30%;
+    max-height: 70%;
+    overflow:scroll;
+    white-space: nowrap;
+    margin: 0;
+    overflow-x: auto;
+}
+
+.list-it{
+    border:2px solid pink;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
